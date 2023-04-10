@@ -1,0 +1,12 @@
+name: Notify on release
+on:
+  release:
+    types: [published]
+
+jobs:
+  slack-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Slack Message
+        run: |
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}' https://hooks.slack.com/services/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

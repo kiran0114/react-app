@@ -9,15 +9,15 @@ jobs:
         with:
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
           message: Hello Slack
-      - uses: kiran0114/open-issue
+      - uses: alialaa/open-issue@v2
         id: issue
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           title: Title
           body: Body
           assignees: |
-            kiran0114
-            kiran011414
+            alialaa
+            alialaa17
       - run: |
           echo ${{ steps.issue.outputs.issue }}
       - uses: ./.github/actions/hello-docker

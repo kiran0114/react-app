@@ -1,4 +1,4 @@
-s#!/bin/sh -l
+#!/bin/sh -l
 
 if [ true ]
 then

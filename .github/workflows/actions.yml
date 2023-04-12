@@ -9,7 +9,7 @@ jobs:
         with:
           slack_webhook: ${{ secrets.SLACK_WEBHOOK }}
           message: Hello Slack
-      - uses: kiran0114/open-issue@v1
+      - uses: kiran0114/open-issue@v2
         id: issue
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
